@@ -1,7 +1,7 @@
 import de.bezier.guido.*;
-public static int NUM_ROWS = 20;
-public static int NUM_COLS = 20;
-public static int numOfBombs = 40;
+public static int NUM_ROWS = 25;
+public static int NUM_COLS = 25;
+public static int numOfBombs = NUM_COLS*2;
 private MSButton[][] buttons;
 private ArrayList <MSButton> bombs = new ArrayList <MSButton>();
 private boolean gameOver = false;
