@@ -1,7 +1,7 @@
 import de.bezier.guido.*;
 public static int NUM_ROWS = 20;
 public static int NUM_COLS = 20;
-public static int numOfBombs = 10;
+public static int numOfBombs = 40;
 private MSButton[][] buttons;
 private ArrayList <MSButton> bombs = new ArrayList <MSButton>();
 private boolean gameOver = false;
@@ -110,11 +110,11 @@ public class MSButton
     }
     // called by manager
     
-    public void mousePressed () 
+    public void mousePressed ()
     {
         if(gameOver) return;
         clicked = true;
-        if(keyPressed)
+        if(mouseButton == RIGHT)
             marked = !marked;
         else if(bombs.contains(this))
         {
